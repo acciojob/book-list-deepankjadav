@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Book List</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<h1>MyBookList</h1>
-	<div class="form-group">
-		<label>Title</label><br>
-		<input type="text" id="title" required><br>
-		<label>Author</label><br>
-		<input type="text" id="author" required><br>
-		<label>ISBN#</label><br>
-		<input type="text" id="isbn" required><br>
-		<button type="submit" id="submit" onclick="insertdata()">Add Book</button>
-		<table class="table table-striped">
-			<thead>
-				<th>Title</th>
-				<th>Author</th>
-				<th>ISBN#</th>
-				<th>Action</th>
-			</thead>
-			<tbody id="book-list"></tbody>
-		</table>
-	</div>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>MyBookList</h1>
+    <div class="form-group">
+        <input type="text" id="title" placeholder="Book Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="text" id="isbn" placeholder="ISBN #" required>
+        <button id="submit">Add Book</button>
+    </div>
 
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN #</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
